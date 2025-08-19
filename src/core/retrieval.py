@@ -11,7 +11,7 @@ class RAGService:
         self.embeddings = self.embedding_service.get_embeddings()
         self.llm = ChatOpenAI(
             model ="gpt-3.5-turbo",
-            temperature = 0.6 ,
+            temperature = 0.7,
             openai_api_key = os.getenv("OPENAI_API_KEY")
         )
         self.vectorstore = None
